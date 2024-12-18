@@ -9,9 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+        primary: '#0F8E91',
+        // You can also add different shades of your primary color if needed
+        'primary-light': '#13AAAE',
+        'primary-dark': '#0C7477',
+      }
     },
   },
   plugins: [],
