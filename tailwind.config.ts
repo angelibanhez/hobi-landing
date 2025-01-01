@@ -1,20 +1,14 @@
-import type { Config } from "tailwindcss";
-
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}",  // si usas la App Router
+    "./components/**/*.{js,ts,jsx,tsx}",
+    // si tienes otras rutas o carpetas con componentes, agrégalas aquí
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#0F8E91',
-        // You can also add different shades of your primary color if needed
-        'primary-light': '#13AAAE',
-        'primary-dark': '#0C7477',
-      }
+      // Aquí podrías sobreescribir o extender tu tema con variables custom
     },
   },
   plugins: [],
-} satisfies Config;
+}
